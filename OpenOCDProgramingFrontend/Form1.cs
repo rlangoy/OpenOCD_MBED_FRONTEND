@@ -47,6 +47,13 @@ namespace OpenOCDProgramingFrontend
 
         private void startProgramming(string pathAndFileName)
         {
+            if(!System.IO.File.Exists(appData.gbdEXE))
+            {    if (!System.IO.File.Exists(appData.gbdEXE))
+                 {  MessageBox.Show(String.Format("Program not found\r\n{0}", appData.gbdEXE));
+                    return;
+                }
+            }
+
             this.Invoke(new EventHandler(showProgrammingInProgress));
             int timeout = 100;
             using (processGDB = new Process())
@@ -161,7 +168,7 @@ namespace OpenOCDProgramingFrontend
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string localAppDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)+@"\OpenOCD mbed frontend\";
+            string localAppDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)+@"\OpenOCD mbed frontend";
 
             //Chk if temp folder exists if not create it
             if (!System.IO.Directory.Exists(localAppDataFolder))
@@ -259,7 +266,7 @@ namespace OpenOCDProgramingFrontend
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-            string localAppDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\OpenOCD mbed frontend\";
+            string localAppDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\OpenOCD mbed frontend";
             string configFile = localAppDataFolder + @"\user.json";
 
             System.IO.File.Delete(configFile);
@@ -269,7 +276,7 @@ namespace OpenOCDProgramingFrontend
         private void btnDefConfig_Click(object sender, EventArgs e)
         {
             string localAppDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\OpenOCD mbed frontend\";
-            string configFile = localAppDataFolder + @"\user.json";
+            string configFile = localAppDataFolder + @"user.json";
             System.IO.File.Delete(configFile);
             Application.Restart();
         }
@@ -416,10 +423,17 @@ namespace OpenOCDProgramingFrontend
             if( !System.IO.Directory.Exists(tempWorkingFolder))
                 System.IO.Directory.CreateDirectory(tempWorkingFolder);
 
-            gbdEXE = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase) + @"\arm-none-eabi-gdb.exe";
+            gbdEXE = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\arm-none-eabi-gdb.exe";
+            if (!System.IO.File.Exists(gbdEXE))
+            {   //Try this if in debug mode   
+                string path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+                gbdEXE = Path.GetFullPath(Path.Combine(path, @"..\..\..\3rdParty\arm-none-eabi-gdb.exe"));
+            }
 
-            //Commands used by OpenOCD to program a chip :)
-            cmdOpenOCD = new List<string> { "monitor reset halt", "load", "monitor reset", "quit", "y" };
+
+
+                //Commands used by OpenOCD to program a chip :)
+                cmdOpenOCD = new List<string> { "monitor reset halt", "load", "monitor reset", "quit", "y" };
             enableNrf51BootErase = false;
             cmdNrf51BootErase = "monitor nrf51 mass_erase";
 

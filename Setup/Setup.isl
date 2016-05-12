@@ -341,7 +341,7 @@
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>OpenOCDProgramingFrontend.Primary_output</td><td>{B6B74C99-EC94-4260-A46B-94B2907279A3}</td><td>INSTALLDIR</td><td>2</td><td/><td>openocdprogramingfrontend.pr</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>arm_none_eabi_gdb.exe</td><td>{66D6D1E8-054E-48D6-80C1-FDDAD72D78EA}</td><td>CommonFilesFolder</td><td>2</td><td/><td>arm_none_eabi_gdb.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>arm_none_eabi_gdb.exe2</td><td>{B56C9347-7B02-450D-B829-8AD5B3D528F1}</td><td>INSTALLDIR</td><td>2</td><td/><td>arm_none_eabi_gdb.exe2</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1050,9 +1050,8 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>CommonFilesFolder</td><td>arm_none_eabi_gdb.exe</td></row>
 		<row><td>INSTALLDIR</td><td>OpenOCDProgramingFrontend.Primary_output</td></row>
-		<row><td>INSTALLDIR</td><td>arm_none_eabi_gdb.exe</td></row>
+		<row><td>INSTALLDIR</td><td>arm_none_eabi_gdb.exe2</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1142,7 +1141,7 @@
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>MY_PRODUCT_NAME1</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>OPENOCD_MBED_FRONTEND</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISMyCompanyDir</td><td>ProgramFilesFolder</td><td>MYCOMP~1|My Company Name</td><td/><td>0</td><td/></row>
 		<row><td>ISMyProductDir</td><td>ISMyCompanyDir</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
@@ -1152,6 +1151,7 @@
 		<row><td>MY_PRODUCT_NAME1</td><td>UNIVERSITY_COLLEGE_OG_SOUTHEAST_NORWAY</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
+		<row><td>OPENOCD_MBED_FRONTEND</td><td>UNIVERSITY_COLLEGE_OG_SOUTHEAST_NORWAY</td><td>OPENOC~1|OpenOCD mbed frontend</td><td/><td>0</td><td/></row>
 		<row><td>PersonalFolder</td><td>TARGETDIR</td><td>.:Personal</td><td/><td>0</td><td/></row>
 		<row><td>PrimaryVolumePath</td><td>TARGETDIR</td><td>.:Primar~1|PrimaryVolumePath</td><td/><td>0</td><td/></row>
 		<row><td>PrintHoodFolder</td><td>TARGETDIR</td><td>.:PRINTH~1|PrintHood</td><td/><td>0</td><td/></row>
@@ -1174,7 +1174,7 @@
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
 		<row><td>YOUR_COMPANY_NAME</td><td>ProgramFilesFolder</td><td>YOURCO~1|Your Company Name</td><td/><td>0</td><td/></row>
 		<row><td>setup</td><td>univer_1_university_college_og_southeast_norway</td><td>Setup</td><td/><td>1</td><td/></row>
-		<row><td>univer_1_university_college_og_southeast_norway</td><td>ProgramMenuFolder</td><td>UNIVER~1|University College og Southeast Norway</td><td/><td>1</td><td/></row>
+		<row><td>univer_1_university_college_og_southeast_norway</td><td>ProgramMenuFolder</td><td>USN</td><td>University of South Norway</td><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -1867,7 +1867,7 @@
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>OpenOCDProgramingFrontend.Primary_output</td></row>
-		<row><td>AlwaysInstall</td><td>arm_none_eabi_gdb.exe</td></row>
+		<row><td>AlwaysInstall</td><td>arm_none_eabi_gdb.exe2</td></row>
 	</table>
 
 	<table name="File">
@@ -1882,7 +1882,7 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>arm_none_eabi_gdb.exe</td><td>arm_none_eabi_gdb.exe</td><td>ARM-NO~1.EXE|arm-none-eabi-gdb.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\BLE_C#\OpenOCD_MBED_FRONTEND\3rdParty\arm-none-eabi-gdb.exe</td><td>1</td><td/></row>
+		<row><td>arm_none_eabi_gdb.exe2</td><td>arm_none_eabi_gdb.exe2</td><td>ARM-NO~1.EXE|arm-none-eabi-gdb.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\BLE_C#\OpenOCD_MBED_FRONTEND\3rdParty\arm-none-eabi-gdb.exe</td><td>1</td><td/></row>
 		<row><td>openocdprogramingfrontend.pr</td><td>OpenOCDProgramingFrontend.Primary_output</td><td>OpenOCDProgramingFrontend.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;OpenOCDProgramingFrontend&gt;|Built</td><td>3</td><td/></row>
 	</table>
 
@@ -2026,7 +2026,7 @@
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
 		<row><td>OpenOCDProgramingFrontend.Primary_output</td><td/><td/><td>_1CE12188_107F_4E4F_AB78_0BE0A6F6FA2B_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>arm_none_eabi_gdb.exe</td><td/><td/><td>_D6E470ED_9809_4212_B643_E357896D944C_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>arm_none_eabi_gdb.exe2</td><td/><td/><td>_6A6D6BB6_FF83_4B9E_A09A_73EA72CDBA4D_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2582,6 +2582,7 @@
 		<col def="I2">Order</col>
 		<col def="I2">ISSetupLocation</col>
 		<col def="S255">ISReleaseFlags</col>
+		<row><td>_7425A5B7_D832_48A2_B0EC_E680AEE30615_</td><td>Microsoft .NET Framework 4.5 Full.prq</td><td/><td/><td/></row>
 	</table>
 
 	<table name="ISSetupType">
@@ -2615,7 +2616,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1520714410</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1520740782</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1520747210</td></row>
@@ -3429,7 +3430,7 @@
 		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>1033</td><td>This setup works until %s. The setup will now exit.</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>This setup was built with an evaluation version of InstallShield and can only be launched from setup.exe.</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>LAUNCH~1.EXE|Launch arm-none-eabi-gdb.exe</td><td>0</td><td/><td>1520724714</td></row>
-		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>1520751402</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>OPENOC~2|OpenOCD mbed™ Frontend</td><td>0</td><td/><td>1654944712</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>1520728682</td></row>
@@ -3719,8 +3720,8 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>1520728682</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>http://www.usn.no</td><td>0</td><td/><td>1520751338</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1520714410</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>http://www.usn.no</td><td>0</td><td/><td>1520755342</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1520740782</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>1520700234</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1520728682</td></row>
 	</table>
@@ -3968,7 +3969,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{4BAE3357-E01D-4BC6-AE22-F23DD02637DA}</td></row>
 		<row><td>ISUSSignature</td><td>{0FF1C6DF-BF1E-4912-B58C-101773F8DFB4}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewRelease,viewUpgradePaths,viewProject</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewRelease,viewUpgradePaths,viewProject,viewSystemSearch,viewCustomActions,viewAppFiles,viewShortcuts,viewObjects</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4420,8 +4421,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>FileKey1</td><td>arm_none_eabi_gdb.exe</td><td/><td>univer_1_university_college_og_southeast_norway</td><td>2</td></row>
-		<row><td>FileKey2</td><td>arm_none_eabi_gdb.exe</td><td/><td>setup</td><td>2</td></row>
 		<row><td>_Built</td><td>OpenOCDProgramingFrontend.Primary_output</td><td/><td>setup</td><td>2</td></row>
 	</table>
 

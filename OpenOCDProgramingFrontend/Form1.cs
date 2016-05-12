@@ -416,7 +416,8 @@ namespace OpenOCDProgramingFrontend
             if( !System.IO.Directory.Exists(tempWorkingFolder))
                 System.IO.Directory.CreateDirectory(tempWorkingFolder);
 
-            gbdEXE = @"C:\Program Files (x86)\GNU Tools ARM Embedded\5.3 2016q1\bin\arm-none-eabi-gdb.exe";
+            gbdEXE = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().CodeBase) + @"\arm-none-eabi-gdb.exe";
+
             //Commands used by OpenOCD to program a chip :)
             cmdOpenOCD = new List<string> { "monitor reset halt", "load", "monitor reset", "quit", "y" };
             enableNrf51BootErase = false;

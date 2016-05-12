@@ -1173,7 +1173,6 @@
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
 		<row><td>YOUR_COMPANY_NAME</td><td>ProgramFilesFolder</td><td>YOURCO~1|Your Company Name</td><td/><td>0</td><td/></row>
-		<row><td>setup</td><td>univer_1_university_college_og_southeast_norway</td><td>Setup</td><td/><td>1</td><td/></row>
 		<row><td>univer_1_university_college_og_southeast_norway</td><td>ProgramMenuFolder</td><td>USN</td><td>University of South Norway</td><td>1</td><td/></row>
 	</table>
 
@@ -3722,6 +3721,7 @@
 		<row><td>ID_STRING2</td><td>1033</td><td>http://www.usn.no</td><td>0</td><td/><td>1520755342</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1520740782</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>1520700234</td></row>
+		<row><td>ID_STRING5</td><td>1033</td><td>OpenOCD Frontend for mbed</td><td>0</td><td/><td>1654934925</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1520728682</td></row>
 	</table>
 
@@ -4420,7 +4420,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>_Built</td><td>OpenOCDProgramingFrontend.Primary_output</td><td/><td>setup</td><td>2</td></row>
+		<row><td>_Built</td><td>OpenOCDProgramingFrontend.Primary_output</td><td/><td>univer_1_university_college_og_southeast_norway</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4506,7 +4506,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>_Built</td><td>setup</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>OpenOCDProgramingFrontend.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td/><td/><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>_Built</td><td>univer_1_university_college_og_southeast_norway</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>OpenOCDProgramingFrontend.Primary_output</td><td>AlwaysInstall</td><td/><td>##ID_STRING5##</td><td/><td/><td/><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>OpenOCDProgramingFrontend.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td/><td/><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 

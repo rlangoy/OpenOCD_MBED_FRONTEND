@@ -265,7 +265,6 @@ namespace OpenOCDProgramingFrontend
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
             string localAppDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\OpenOCD mbed frontend";
             string configFile = localAppDataFolder + @"\user.json";
 
@@ -398,7 +397,6 @@ namespace OpenOCDProgramingFrontend
         public string openOCDconnection
         {
             get  { return @"target remote " + remoteAddress + @":" + remotePort.ToString(); }
-
         }
 
         public static AppData appDataFrom(string json)

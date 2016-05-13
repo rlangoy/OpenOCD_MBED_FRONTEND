@@ -7,7 +7,7 @@ The program program creates a virtual folder on your pc <br>
 The files stored on the virtual drive wil be used by the OpenOCD to program your device <br>
 Alternatively you could drag and drop the files you would like to be programmed.
 
-####HW Example
+#####HW Example
 [Programing the BLE400 (NRF51822 module) using RaspberryPI 2 and OpenOCD] (https://rlangoy.github.io/OpenOCD_MBED_FRONTEND/HWExample.htm)
 
 #####Download

@@ -3723,7 +3723,7 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>1520728682</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>http://www.UniversityCollegeogSoutheastNorway.com</td><td>0</td><td/><td>1789189288</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>http://www.usn.no</td><td>0</td><td/><td>1789173995</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1789189288</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>1520700234</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>OpenOCD Frontend for mbed</td><td>0</td><td/><td>1654934925</td></row>

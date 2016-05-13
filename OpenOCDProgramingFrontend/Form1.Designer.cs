@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cmbDrive = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.chkEnableBoolLoader = new System.Windows.Forms.CheckBox();
@@ -58,10 +59,9 @@
             this.cmbDrive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDrive.FormattingEnabled = true;
             this.cmbDrive.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.cmbDrive.Location = new System.Drawing.Point(33, 33);
-            this.cmbDrive.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbDrive.Location = new System.Drawing.Point(25, 27);
             this.cmbDrive.Name = "cmbDrive";
-            this.cmbDrive.Size = new System.Drawing.Size(105, 24);
+            this.cmbDrive.Size = new System.Drawing.Size(80, 21);
             this.cmbDrive.TabIndex = 0;
             this.cmbDrive.ValueMember = "0";
             this.cmbDrive.SelectedIndexChanged += new System.EventHandler(this.cmbDrive_SelectedIndexChanged);
@@ -69,8 +69,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 1;
@@ -79,8 +78,7 @@
             // chkEnableBoolLoader
             // 
             this.chkEnableBoolLoader.AutoSize = true;
-            this.chkEnableBoolLoader.Location = new System.Drawing.Point(16, 131);
-            this.chkEnableBoolLoader.Margin = new System.Windows.Forms.Padding(4);
+            this.chkEnableBoolLoader.Location = new System.Drawing.Point(12, 106);
             this.chkEnableBoolLoader.Name = "chkEnableBoolLoader";
             this.chkEnableBoolLoader.Size = new System.Drawing.Size(159, 17);
             this.chkEnableBoolLoader.TabIndex = 5;
@@ -90,18 +88,16 @@
             // 
             // txtCmdEraseBoot
             // 
-            this.txtCmdEraseBoot.Location = new System.Drawing.Point(33, 150);
-            this.txtCmdEraseBoot.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCmdEraseBoot.Location = new System.Drawing.Point(25, 122);
             this.txtCmdEraseBoot.Name = "txtCmdEraseBoot";
-            this.txtCmdEraseBoot.Size = new System.Drawing.Size(278, 20);
+            this.txtCmdEraseBoot.Size = new System.Drawing.Size(210, 20);
             this.txtCmdEraseBoot.TabIndex = 6;
             this.txtCmdEraseBoot.TextChanged += new System.EventHandler(this.txtCmdEraseBoot_TextChanged);
             // 
             // labOpenOCDRemoteName
             // 
             this.labOpenOCDRemoteName.AutoSize = true;
-            this.labOpenOCDRemoteName.Location = new System.Drawing.Point(16, 76);
-            this.labOpenOCDRemoteName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labOpenOCDRemoteName.Location = new System.Drawing.Point(12, 62);
             this.labOpenOCDRemoteName.Name = "labOpenOCDRemoteName";
             this.labOpenOCDRemoteName.Size = new System.Drawing.Size(136, 13);
             this.labOpenOCDRemoteName.TabIndex = 9;
@@ -110,9 +106,10 @@
             // picConfig
             // 
             this.picConfig.Image = global::OpenOCDProgramingFrontend.Properties.Resources.settings;
-            this.picConfig.Location = new System.Drawing.Point(229, 0);
+            this.picConfig.Location = new System.Drawing.Point(172, 0);
+            this.picConfig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picConfig.Name = "picConfig";
-            this.picConfig.Size = new System.Drawing.Size(88, 77);
+            this.picConfig.Size = new System.Drawing.Size(66, 63);
             this.picConfig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picConfig.TabIndex = 14;
             this.picConfig.TabStop = false;
@@ -121,10 +118,9 @@
             // picDownloadInProgress
             // 
             this.picDownloadInProgress.Image = global::OpenOCDProgramingFrontend.Properties.Resources.loading42;
-            this.picDownloadInProgress.Location = new System.Drawing.Point(173, 96);
-            this.picDownloadInProgress.Margin = new System.Windows.Forms.Padding(4);
+            this.picDownloadInProgress.Location = new System.Drawing.Point(130, 78);
             this.picDownloadInProgress.Name = "picDownloadInProgress";
-            this.picDownloadInProgress.Size = new System.Drawing.Size(144, 35);
+            this.picDownloadInProgress.Size = new System.Drawing.Size(108, 28);
             this.picDownloadInProgress.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDownloadInProgress.TabIndex = 7;
             this.picDownloadInProgress.TabStop = false;
@@ -132,10 +128,9 @@
             // 
             // txtOpenOCDAddr
             // 
-            this.txtOpenOCDAddr.Location = new System.Drawing.Point(33, 96);
-            this.txtOpenOCDAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOpenOCDAddr.Location = new System.Drawing.Point(25, 78);
             this.txtOpenOCDAddr.Name = "txtOpenOCDAddr";
-            this.txtOpenOCDAddr.Size = new System.Drawing.Size(132, 20);
+            this.txtOpenOCDAddr.Size = new System.Drawing.Size(100, 20);
             this.txtOpenOCDAddr.TabIndex = 8;
             this.txtOpenOCDAddr.Text = "0.0.0.0";
             this.txtOpenOCDAddr.TextChanged += new System.EventHandler(this.IpAddrBox_TextChanged);
@@ -143,7 +138,8 @@
             // labOutPut
             // 
             this.labOutPut.AutoSize = true;
-            this.labOutPut.Location = new System.Drawing.Point(337, 9);
+            this.labOutPut.Location = new System.Drawing.Point(253, 7);
+            this.labOutPut.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labOutPut.Name = "labOutPut";
             this.labOutPut.Size = new System.Drawing.Size(86, 13);
             this.labOutPut.TabIndex = 15;
@@ -151,9 +147,10 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(340, 100);
+            this.btnSave.Location = new System.Drawing.Point(255, 81);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(103, 31);
+            this.btnSave.Size = new System.Drawing.Size(77, 25);
             this.btnSave.TabIndex = 16;
             this.btnSave.Text = "Save Config File";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -166,19 +163,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(3, 177);
+            this.tabControl1.Location = new System.Drawing.Point(2, 144);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(750, 269);
+            this.tabControl1.Size = new System.Drawing.Size(562, 219);
             this.tabControl1.TabIndex = 18;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.txtGDBOutput);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(742, 240);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(554, 193);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "DBG Output";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -186,21 +185,21 @@
             // txtGDBOutput
             // 
             this.txtGDBOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtGDBOutput.Location = new System.Drawing.Point(3, 3);
-            this.txtGDBOutput.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGDBOutput.Location = new System.Drawing.Point(2, 2);
             this.txtGDBOutput.Multiline = true;
             this.txtGDBOutput.Name = "txtGDBOutput";
             this.txtGDBOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtGDBOutput.Size = new System.Drawing.Size(736, 234);
+            this.txtGDBOutput.Size = new System.Drawing.Size(550, 189);
             this.txtGDBOutput.TabIndex = 3;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.txtConfig);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(742, 240);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(554, 193);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Config File";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -208,18 +207,20 @@
             // txtConfig
             // 
             this.txtConfig.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtConfig.Location = new System.Drawing.Point(3, 3);
+            this.txtConfig.Location = new System.Drawing.Point(2, 2);
+            this.txtConfig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConfig.Multiline = true;
             this.txtConfig.Name = "txtConfig";
             this.txtConfig.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtConfig.Size = new System.Drawing.Size(736, 234);
+            this.txtConfig.Size = new System.Drawing.Size(550, 189);
             this.txtConfig.TabIndex = 18;
             // 
             // btnDefConfig
             // 
-            this.btnDefConfig.Location = new System.Drawing.Point(340, 137);
+            this.btnDefConfig.Location = new System.Drawing.Point(255, 111);
+            this.btnDefConfig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDefConfig.Name = "btnDefConfig";
-            this.btnDefConfig.Size = new System.Drawing.Size(103, 29);
+            this.btnDefConfig.Size = new System.Drawing.Size(77, 24);
             this.btnDefConfig.TabIndex = 19;
             this.btnDefConfig.Text = "Default Config ";
             this.btnDefConfig.UseVisualStyleBackColor = true;
@@ -228,7 +229,8 @@
             // labConfigFile
             // 
             this.labConfigFile.AutoSize = true;
-            this.labConfigFile.Location = new System.Drawing.Point(337, 33);
+            this.labConfigFile.Location = new System.Drawing.Point(253, 27);
+            this.labConfigFile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labConfigFile.Name = "labConfigFile";
             this.labConfigFile.Size = new System.Drawing.Size(36, 13);
             this.labConfigFile.TabIndex = 20;
@@ -237,9 +239,9 @@
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 445);
+            this.ClientSize = new System.Drawing.Size(574, 362);
             this.Controls.Add(this.labConfigFile);
             this.Controls.Add(this.btnDefConfig);
             this.Controls.Add(this.tabControl1);
@@ -253,7 +255,7 @@
             this.Controls.Add(this.chkEnableBoolLoader);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbDrive);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "OpenOCD mbed™ Frontend";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);

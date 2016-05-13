@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenOCDProgramingFrontend", "OpenOCDProgramingFrontend\OpenOCDProgramingFrontend.csproj", "{0D988954-9DB4-40F8-8465-54BBA905282A}"
 EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{D8B88D7B-E19A-42CE-8411-316B7086480F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0D988954-9DB4-40F8-8465-54BBA905282A} = {0D988954-9DB4-40F8-8465-54BBA905282A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

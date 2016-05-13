@@ -340,6 +340,7 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td>{363FA6F0-B157-413E-837A-D022CFAB4AC3}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>OpenOCDProgramingFrontend.Primary_output</td><td>{B6B74C99-EC94-4260-A46B-94B2907279A3}</td><td>INSTALLDIR</td><td>2</td><td/><td>openocdprogramingfrontend.pr</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>arm_none_eabi_gdb.exe2</td><td>{B56C9347-7B02-450D-B829-8AD5B3D528F1}</td><td>INSTALLDIR</td><td>2</td><td/><td>arm_none_eabi_gdb.exe2</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
@@ -552,7 +553,7 @@
 		<row><td>LicenseAgreement</td><td>DlgLine</td><td>Line</td><td>48</td><td>234</td><td>326</td><td>0</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td/></row>
 		<row><td>LicenseAgreement</td><td>DlgTitle</td><td>Text</td><td>13</td><td>6</td><td>292</td><td>25</td><td>65539</td><td/><td>##IDS__IsLicenseDlg_LicenseAgreement##</td><td/><td/><td>0</td><td/><td/><td/></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>PushButton</td><td>301</td><td>188</td><td>65</td><td>17</td><td>3</td><td/><td>##IDS_PRINT_BUTTON##</td><td>Agree</td><td/><td>0</td><td/><td/><td/></row>
-		<row><td>LicenseAgreement</td><td>Memo</td><td>ScrollableText</td><td>8</td><td>55</td><td>358</td><td>130</td><td>7</td><td/><td/><td/><td/><td>0</td><td/><td>&lt;ISProductFolder&gt;\Redist\0409\Eula.rtf</td><td/></row>
+		<row><td>LicenseAgreement</td><td>Memo</td><td>ScrollableText</td><td>8</td><td>55</td><td>358</td><td>130</td><td>7</td><td/><td/><td/><td/><td>0</td><td/><td>&lt;VSSolutionFolder&gt;\LICENSE.rtf</td><td/></row>
 		<row><td>LicenseAgreement</td><td>Next</td><td>PushButton</td><td>230</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_NEXT##</td><td>Cancel</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>MaintenanceType</td><td>Back</td><td>PushButton</td><td>164</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_BACK##</td><td>Next</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>MaintenanceType</td><td>Banner</td><td>Bitmap</td><td>0</td><td>0</td><td>374</td><td>44</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td>NewBinary1</td></row>
@@ -921,7 +922,7 @@
 		<row><td>DatabaseFolder</td><td>ChangeFolder</td><td>SpawnDialog</td><td>InstallChangeFolder</td><td>1</td><td>1</td></row>
 		<row><td>DatabaseFolder</td><td>ChangeFolder</td><td>[_BrowseProperty]</td><td>DATABASEDIR</td><td>1</td><td>2</td></row>
 		<row><td>DatabaseFolder</td><td>Next</td><td>NewDialog</td><td>SetupType</td><td>1</td><td>1</td></row>
-		<row><td>DestinationFolder</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>NOT Installed</td><td>0</td></row>
+		<row><td>DestinationFolder</td><td>Back</td><td>NewDialog</td><td>LicenseAgreement</td><td>NOT Installed</td><td>0</td></row>
 		<row><td>DestinationFolder</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>1</td></row>
 		<row><td>DestinationFolder</td><td>ChangeFolder</td><td>SpawnDialog</td><td>InstallChangeFolder</td><td>1</td><td>1</td></row>
 		<row><td>DestinationFolder</td><td>ChangeFolder</td><td>[_BrowseProperty]</td><td>INSTALLDIR</td><td>1</td><td>2</td></row>
@@ -938,11 +939,11 @@
 		<row><td>InstallChangeFolder</td><td>Up</td><td>DirectoryListUp</td><td>0</td><td>1</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Back</td><td>NewDialog</td><td>SplashBitmap</td><td>Display_IsBitmapDlg</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
-		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>DestinationFolder</td><td>1</td><td>0</td></row>
-		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>1</td><td>0</td></row>
+		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>LicenseAgreement</td><td>1</td><td>0</td></row>
+		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>NOT Installed</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>DoAction</td><td>ISPrint</td><td>1</td><td>0</td></row>
-		<row><td>LicenseAgreement</td><td>Next</td><td>NewDialog</td><td>CustomerInformation</td><td>AgreeToLicense = "Yes"</td><td>0</td></row>
+		<row><td>LicenseAgreement</td><td>Next</td><td>NewDialog</td><td>DestinationFolder</td><td>AgreeToLicense = "Yes"</td><td>0</td></row>
 		<row><td>MaintenanceType</td><td>Back</td><td>NewDialog</td><td>MaintenanceWelcome</td><td>1</td><td>0</td></row>
 		<row><td>MaintenanceType</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>MaintenanceType</td><td>Next</td><td>NewDialog</td><td>CustomSetup</td><td>_IsMaintenance = "Change"</td><td>12</td></row>
@@ -1050,6 +1051,7 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>INSTALLDIR</td><td>OpenOCDProgramingFrontend.Primary_output</td></row>
 		<row><td>INSTALLDIR</td><td>arm_none_eabi_gdb.exe2</td></row>
 	</table>
@@ -1865,6 +1867,7 @@
 	<table name="FeatureComponents">
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>OpenOCDProgramingFrontend.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>arm_none_eabi_gdb.exe2</td></row>
 	</table>
@@ -1882,6 +1885,7 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>arm_none_eabi_gdb.exe2</td><td>arm_none_eabi_gdb.exe2</td><td>ARM-NO~1.EXE|arm-none-eabi-gdb.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\BLE_C#\OpenOCD_MBED_FRONTEND\3rdParty\arm-none-eabi-gdb.exe</td><td>1</td><td/></row>
+		<row><td>license.rtf</td><td>ISX_DEFAULTCOMPONENT</td><td>LICENSE.rtf</td><td>0</td><td/><td/><td/><td>1</td><td>D:\BLE_C#\OpenOCD_MBED_FRONTEND\LICENSE.rtf</td><td>1</td><td/></row>
 		<row><td>openocdprogramingfrontend.pr</td><td>OpenOCDProgramingFrontend.Primary_output</td><td>OpenOCDProgramingFrontend.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;OpenOCDProgramingFrontend&gt;|Built</td><td>3</td><td/></row>
 	</table>
 
@@ -2024,6 +2028,7 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_4D23DFA7_7092_4A79_A225_67E690780CA5_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>OpenOCDProgramingFrontend.Primary_output</td><td/><td/><td>_1CE12188_107F_4E4F_AB78_0BE0A6F6FA2B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>arm_none_eabi_gdb.exe2</td><td/><td/><td>_6A6D6BB6_FF83_4B9E_A09A_73EA72CDBA4D_FILTER</td><td/><td/><td/><td/></row>
 	</table>
@@ -2614,7 +2619,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1520740782</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1789189288</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1520747210</td></row>
@@ -3718,8 +3723,8 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>1520728682</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>1520728682</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>http://www.usn.no</td><td>0</td><td/><td>1520755342</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1520740782</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>http://www.UniversityCollegeogSoutheastNorway.com</td><td>0</td><td/><td>1789189288</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>University College og Southeast Norway</td><td>0</td><td/><td>1789189288</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>1520700234</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>OpenOCD Frontend for mbed</td><td>0</td><td/><td>1654934925</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>1520728682</td></row>
@@ -3968,7 +3973,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{4BAE3357-E01D-4BC6-AE22-F23DD02637DA}</td></row>
 		<row><td>ISUSSignature</td><td>{0FF1C6DF-BF1E-4912-B58C-101773F8DFB4}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewRelease,viewUpgradePaths,viewProject,viewSystemSearch,viewCustomActions,viewAppFiles,viewShortcuts,viewObjects</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewRelease,viewUpgradePaths,viewProject,viewSystemSearch,viewCustomActions,viewAppFiles,viewShortcuts,viewObjects,viewISToday</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>

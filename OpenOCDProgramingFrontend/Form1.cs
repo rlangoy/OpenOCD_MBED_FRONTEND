@@ -45,9 +45,46 @@ namespace OpenOCDProgramingFrontend
         }
 
 
+        private void ConvBinToHex(string pathAndFileName)
+        {
+            //arm-none-eabi-objcopy.exe" -I binary -O ihex Blink_the_led_NUCLEO_F3032RE.bin Blink_the_led_NUCLEO_F3032RE.hex
+
+            string hexFileName = Path.GetFileNameWithoutExtension(pathAndFileName.Trim('\"'));
+            string execArg = String.Format("{0} -I binary -O ihex {1} \"z:\\{2}.hex\"",appData.objcopyExtraArgs, pathAndFileName, hexFileName);
+            
+            // Prepare the process to run
+            ProcessStartInfo start = new ProcessStartInfo();
+            // Enter in the command line arguments, everything you would enter after the executable name itself
+            start.Arguments = execArg;
+            // Enter the executable to run, including the complete path
+            start.FileName = appData.objcopyEXE;
+            // Do you want to show a console window?
+            start.WindowStyle = ProcessWindowStyle.Hidden;
+            start.CreateNoWindow = true;
+            int exitCode;
+
+            // Run the external process & wait for it to finish
+            using (Process proc = Process.Start(start))
+            {
+                proc.WaitForExit();
+
+                // Retrieve the app's exit code
+                exitCode = proc.ExitCode;
+            }
+
+        }
+
         private void startProgramming(string pathAndFileName)
         {
-            if(!System.IO.File.Exists(appData.gbdEXE))
+            //if format is .bin convert it to .hex
+            string ext = Path.GetExtension(pathAndFileName.Trim('\"'));
+            if(ext.ToLower().Equals(".bin"))
+            {
+                ConvBinToHex(pathAndFileName);
+                return;
+           }
+           
+            if (!System.IO.File.Exists(appData.gbdEXE))
             {    if (!System.IO.File.Exists(appData.gbdEXE))
                  {  MessageBox.Show(String.Format("Program not found\r\n{0}", appData.gbdEXE));
                     return;
@@ -294,6 +331,13 @@ namespace OpenOCDProgramingFrontend
         public string gbdEXE { get; set; }  //Location of the GDB (Gnu Debugger) program/app
 
         [DataMember]
+        public string objcopyEXE { get; set; }  //Location of the objcopy (input/output format changer) program/app
+
+        [DataMember]
+        public string objcopyExtraArgs { get; set; }  //Addidional arguemnts for objcopy (input/output format changer) program/app
+
+
+        [DataMember]
         public string tempWorkingFolder { get; set; }  //Folder that is to be mounted as a virtual drive
 
         [DataMember]
@@ -429,9 +473,17 @@ namespace OpenOCDProgramingFrontend
             }
 
 
+            objcopyEXE = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\arm-none-eabi-objcopy.exe";
+            if (!System.IO.File.Exists(objcopyEXE))
+            {   //Try this if in debug mode   
+                string path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+                objcopyEXE = Path.GetFullPath(Path.Combine(path, @"..\..\..\3rdParty\arm-none-eabi-objcopy.exe"));
+            }
 
-                //Commands used by OpenOCD to program a chip :)
-                cmdOpenOCD = new List<string> { "monitor reset halt", "load", "monitor reset", "quit", "y" };
+            objcopyExtraArgs = "--change-addresses 0x8000000";
+
+            //Commands used by OpenOCD to program a chip :)
+            cmdOpenOCD = new List<string> { "monitor reset halt", "load", "monitor reset", "quit", "y" };
             enableNrf51BootErase = false;
             cmdNrf51BootErase = "monitor nrf51 mass_erase";
 

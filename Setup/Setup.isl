@@ -343,6 +343,7 @@
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{363FA6F0-B157-413E-837A-D022CFAB4AC3}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>OpenOCDProgramingFrontend.Primary_output</td><td>{B6B74C99-EC94-4260-A46B-94B2907279A3}</td><td>INSTALLDIR</td><td>2</td><td/><td>openocdprogramingfrontend.pr</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>arm_none_eabi_gdb.exe2</td><td>{B56C9347-7B02-450D-B829-8AD5B3D528F1}</td><td>INSTALLDIR</td><td>2</td><td/><td>arm_none_eabi_gdb.exe2</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>arm_none_eabi_objcopy.exe</td><td>{7DDE16E9-4B8B-4BA8-8E78-B4AE7185730F}</td><td>INSTALLDIR</td><td>2</td><td/><td>arm_none_eabi_objcopy.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1054,6 +1055,7 @@
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>INSTALLDIR</td><td>OpenOCDProgramingFrontend.Primary_output</td></row>
 		<row><td>INSTALLDIR</td><td>arm_none_eabi_gdb.exe2</td></row>
+		<row><td>INSTALLDIR</td><td>arm_none_eabi_objcopy.exe</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1870,6 +1872,7 @@
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>OpenOCDProgramingFrontend.Primary_output</td></row>
 		<row><td>AlwaysInstall</td><td>arm_none_eabi_gdb.exe2</td></row>
+		<row><td>AlwaysInstall</td><td>arm_none_eabi_objcopy.exe</td></row>
 	</table>
 
 	<table name="File">
@@ -1885,6 +1888,7 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
 		<row><td>arm_none_eabi_gdb.exe2</td><td>arm_none_eabi_gdb.exe2</td><td>ARM-NO~1.EXE|arm-none-eabi-gdb.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\BLE_C#\OpenOCD_MBED_FRONTEND\3rdParty\arm-none-eabi-gdb.exe</td><td>1</td><td/></row>
+		<row><td>arm_none_eabi_objcopy.exe</td><td>arm_none_eabi_objcopy.exe</td><td>ARM-NO~1.EXE|arm-none-eabi-objcopy.exe</td><td>0</td><td/><td/><td/><td>1</td><td>D:\BLE_C#\OpenOCD_MBED_FRONTEND\3rdParty\arm-none-eabi-objcopy.exe</td><td>1</td><td/></row>
 		<row><td>license.rtf</td><td>ISX_DEFAULTCOMPONENT</td><td>LICENSE.rtf</td><td>0</td><td/><td/><td/><td>1</td><td>D:\BLE_C#\OpenOCD_MBED_FRONTEND\LICENSE.rtf</td><td>1</td><td/></row>
 		<row><td>openocdprogramingfrontend.pr</td><td>OpenOCDProgramingFrontend.Primary_output</td><td>OpenOCDProgramingFrontend.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;OpenOCDProgramingFrontend&gt;|Built</td><td>3</td><td/></row>
 	</table>
@@ -2031,6 +2035,7 @@
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_4D23DFA7_7092_4A79_A225_67E690780CA5_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>OpenOCDProgramingFrontend.Primary_output</td><td/><td/><td>_1CE12188_107F_4E4F_AB78_0BE0A6F6FA2B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>arm_none_eabi_gdb.exe2</td><td/><td/><td>_6A6D6BB6_FF83_4B9E_A09A_73EA72CDBA4D_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>arm_none_eabi_objcopy.exe</td><td/><td/><td>_565E8EDC_24F5_4939_BA35_6CA87566AD98_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -4348,7 +4353,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
 		<row><td>ProductCode</td><td>{E03151E7-2701-4B85-A8E5-7172707199F2}</td><td/></row>
 		<row><td>ProductName</td><td>Setup</td><td/></row>
-		<row><td>ProductVersion</td><td>1.01.0000</td><td/></row>
+		<row><td>ProductVersion</td><td>1.02.0000</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>

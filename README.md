@@ -8,7 +8,7 @@ The files stored on the virtual drive wil be used by the OpenOCD to program your
 Alternatively you could drag and drop the files you would like to be programmed.
 
 #####HW Example
-[Programing the BLE400 (NRF51822 module) using RaspberryPI 2 and OpenOCD] (https://rlangoy.github.io/OpenOCD_MBED_FRONTEND/HWExample.htm)
+[Programing the BLE400 (NRF51822 module) using RaspberryPI 2 and OpenOCD] (https://rlangoy.github.io/OpenOCD_MBED_FRONTEND/HWExample.htm)<br>
 [Programing stm nucleo (stm32f303re microcontroller) using RaspberryPI 2 and OpenOCD] (https://rlangoy.github.io/OpenOCD_MBED_FRONTEND/HWNucloeExample.htm)
 
 #####Download

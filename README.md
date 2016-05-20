@@ -9,7 +9,8 @@ Alternatively you could drag and drop the files you would like to be programmed.
 
 #####HW Example
 [Programing the BLE400 (NRF51822 module) using RaspberryPI 2 and OpenOCD] (https://rlangoy.github.io/OpenOCD_MBED_FRONTEND/HWExample.htm)
+[Programing stm nucleo (stm32f303re microcontroller) using RaspberryPI 2 and OpenOCD] (https://rlangoy.github.io/OpenOCD_MBED_FRONTEND/HWNucloeExample.htm)
 
 #####Download
-[Windows setup download] (https://github.com/rlangoy/OpenOCD_MBED_FRONTEND/releases/download/v1.0.1/setup.exe) <br>
+[Windows setup download] (https://github.com/rlangoy/OpenOCD_MBED_FRONTEND/releases/download/v1.2/setup.exe) <br>
 Source for the release is located at [releases] (https://github.com/rlangoy/OpenOCD_MBED_FRONTEND/releases)
